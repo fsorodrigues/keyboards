@@ -35,9 +35,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_MUTE,    KC_CAPS, KC_BRID,      KC_BRIU,      KC_NO,        KC_NO,        RM_VALD,              RM_VALU,          KC_MPRV,      KC_MPLY,      KC_MNXT,      KC_MUTE,         KC_VOLD, KC_VOLU,    KC_INS,  KC_DEL,
         LCMD(KC_C), KC_GRV,  KC_1,         KC_2,         KC_3,         KC_4,         KC_5,                 KC_6,             KC_7,         KC_8,         KC_9,         KC_0,            KC_MINS, KC_EQL,     KC_BSPC, KC_PGUP,
         LCMD(KC_V), KC_TAB,  KC_Q,         KC_W,         KC_E,         KC_R,         KC_T,                 KC_Y,             KC_U,         KC_I,         KC_O,         KC_P,            KC_LBRC, KC_RBRC,    KC_BSLS, KC_PGDN,
-        _______,    KC_ESC,  LCMD_T(KC_A), LOPT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), LT(MAC_NUMPAD, KC_G), LT(MAC_FN, KC_H), RCTL_T(KC_J), RSFT_T(KC_K), ROPT_T(KC_L), RCMD_T(KC_SCLN), KC_QUOT, KC_ENT,              KC_HOME,
-        _______,    KC_LSFT, KC_Z,         KC_X,         KC_C,         KC_V,         KC_B,                 KC_B,             KC_N,         KC_M,         KC_COMM,      KC_DOT,          KC_SLSH, MO(MAC_FN), KC_UP,
-        _______,    KC_LCTL, KC_LOPT,                    KC_LCMD,      KC_SPC,       MO(MAC_NUMPAD),       KC_SPC,                         KC_RCMD,                                              KC_LEFT,    KC_DOWN, KC_RGHT),
+        LCMD(KC_X), KC_ESC,  LCMD_T(KC_A), LOPT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), LT(MAC_NUMPAD, KC_G), LT(MAC_FN, KC_H), RCTL_T(KC_J), RSFT_T(KC_K), ROPT_T(KC_L), RCMD_T(KC_SCLN), KC_QUOT, KC_ENT,              KC_HOME,
+        LCMD(KC_Z), KC_LSFT, KC_Z,         KC_X,         KC_C,         KC_V,         KC_B,                 KC_B,             KC_N,         KC_M,         KC_COMM,      KC_DOT,          KC_SLSH, MO(MAC_FN), KC_UP,
+        LGS(KC_V),  KC_LCTL, KC_LOPT,                    KC_LCMD,      KC_SPC,       MO(MAC_NUMPAD),       KC_SPC,                         KC_RCMD,                                              KC_LEFT,    KC_DOWN, KC_RGHT),
 
     [MAC_FN] = LAYOUT_ansi_89(
         RM_TOGG,    _______, KC_F1,        KC_F2,        KC_F3,      KC_F4,          KC_F5,                KC_F6,            KC_F7,        KC_F8,        KC_F9,        KC_F10,          KC_F10,  KC_F12,     _______, _______,
@@ -59,9 +59,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_MUTE,    KC_CAPS, KC_F1,        KC_F2,        KC_F3,        KC_F4,        KC_F5,                KC_F6,            KC_F7,        KC_F8,        KC_F9,        KC_F10,          KC_F11,  KC_F12,     KC_INS,  KC_DEL,
         LCTL(KC_C), KC_GRV,  KC_1,         KC_2,         KC_3,         KC_4,         KC_5,                 KC_6,             KC_7,         KC_8,         KC_9,         KC_0,            KC_MINS, KC_EQL,     KC_BSPC, KC_PGUP,
         LCTL(KC_V), KC_TAB,  KC_Q,         KC_W,         KC_E,         KC_R,         KC_T,                 KC_Y,             KC_U,         KC_I,         KC_O,         KC_P,            KC_LBRC, KC_RBRC,    KC_BSLS, KC_PGDN,
-        _______,    KC_ESC,  LWIN_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), LT(WIN_NUMPAD, KC_G), LT(WIN_FN, KC_H), RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RWIN_T(KC_SCLN), KC_QUOT, KC_ENT,              KC_HOME,
-        _______,    KC_LSFT, KC_Z,         KC_X,         KC_C,         KC_V,         KC_B,                 KC_B,             KC_N,         KC_M,         KC_COMM,      KC_DOT,          KC_SLSH, MO(WIN_FN), KC_UP,
-        _______,    KC_LCTL, KC_LWIN,                    KC_LALT,      KC_SPC,       MO(WIN_NUMPAD),       KC_SPC,                         KC_RWIN,                                              KC_LEFT,    KC_DOWN, KC_RGHT),
+        LCTL(KC_X), KC_ESC,  LWIN_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), LT(WIN_NUMPAD, KC_G), LT(WIN_FN, KC_H), RCTL_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RWIN_T(KC_SCLN), KC_QUOT, KC_ENT,              KC_HOME,
+        LCTL(KC_Z), KC_LSFT, KC_Z,         KC_X,         KC_C,         KC_V,         KC_B,                 KC_B,             KC_N,         KC_M,         KC_COMM,      KC_DOT,          KC_SLSH, MO(WIN_FN), KC_UP,
+        LCTL(KC_Y), KC_LCTL, KC_LWIN,                    KC_LALT,      KC_SPC,       MO(WIN_NUMPAD),       KC_SPC,                         KC_RWIN,                                              KC_LEFT,    KC_DOWN, KC_RGHT),
 
     [WIN_FN] = LAYOUT_ansi_89(
         RM_TOGG,    _______, KC_BRID,      KC_BRIU,     KC_TASK,       KC_FLXP,      RM_VALD,              RM_VALU,           KC_MPRV,      KC_MPLY,      KC_MNXT,      KC_MUTE,         KC_VOLD, KC_VOLU,    _______, _______,
