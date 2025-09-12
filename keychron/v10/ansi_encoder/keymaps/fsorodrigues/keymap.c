@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         LCMD(KC_V), KC_TAB,  KC_Q,         KC_W,         KC_E,         KC_R,         KC_T,                 KC_Y,             KC_U,         KC_I,         KC_O,         KC_P,            KC_LBRC, KC_RBRC,    KC_BSLS, KC_PGDN,
         LCMD(KC_X), KC_ESC,  LCMD_T(KC_A), LOPT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), LT(MAC_NUMPAD, KC_G), LT(MAC_FN, KC_H), RCTL_T(KC_J), RSFT_T(KC_K), ROPT_T(KC_L), RCMD_T(KC_SCLN), KC_QUOT, KC_ENT,              KC_HOME,
         LCMD(KC_Z), KC_LSFT, KC_Z,         KC_X,         KC_C,         KC_V,         KC_B,                 KC_B,             KC_N,         KC_M,         KC_COMM,      KC_DOT,          KC_SLSH, MO(MAC_FN), KC_UP,
-        LGS(KC_V),  KC_LCTL, KC_LOPT,                    KC_LCMD,      KC_SPC,       MO(MAC_NUMPAD),       KC_SPC,                         KC_RCMD,                                              KC_LEFT,    KC_DOWN, KC_RGHT),
+        LSG(KC_V),  KC_LCTL, KC_LOPT,                    KC_LCMD,      KC_SPC,       MO(MAC_NUMPAD),       KC_SPC,                         KC_RCMD,                                              KC_LEFT,    KC_DOWN, KC_RGHT),
 
     [MAC_FN] = LAYOUT_ansi_89(
         RM_TOGG,    _______, KC_F1,        KC_F2,        KC_F3,      KC_F4,          KC_F5,                KC_F6,            KC_F7,        KC_F8,        KC_F9,        KC_F10,          KC_F10,  KC_F12,     _______, _______,
